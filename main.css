@@ -1,0 +1,106 @@
+body{
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+}
+
+.grid-container{
+  display: grid;
+  grid-template-columns: 200px auto;
+  overflow-x: hidden;
+}
+
+/* ---SIDEBAR SECTION ---*/
+
+.sidebar{
+  
+}
+
+nav {
+  height: 100vh;
+  width:200px;
+  position:fixed;
+  background-color: rga(255,255,255);
+  display: grid;
+  grid-template-rows: 25% 75%;
+  min-height: 800px;
+}
+
+.logo{
+  display: grid;
+  width: 200px;
+  grid-template-rows: 80% 20%;
+  align-content: center;
+  justify-content: center;
+}
+
+.logo img{
+  height: 150px;
+  margin: auto;
+}
+
+.logo span {
+  text-align: center;
+}
+
+.menu{
+  margin-top: 20px;
+  display: grid;
+  grid-template-rows: 50px 50px 50px 50px 50px 50px;
+}
+
+.menu a{
+  margin-left: 20px;
+  display: grid;
+  grid-template-columns: 45px auto;
+  align-items: center;
+}
+
+.menu span {
+  color: black;
+}
+
+.menuIcon {
+  font-size: 25px;
+}
+
+.fa-user{
+    color:rgb(81,198,217);
+}
+.fa-graduation-cap{
+  color:rgb(71,73,179);
+}
+.fa-cog{
+  color: rgb(241,72,61);
+}
+.fa-code{
+  color:rgb(21,127,114);
+}
+.fa-envelope{
+  color:rgb(252,155,25);
+}
+.fa-file-alt{
+  color:rgb(68,68,68);
+}
+
+/* ---MAIN SECTION ---*/
+
+main {
+  background: rgba(0,0,0,0.5);
+  width: 100%;
+  height: 400vh;
+}
+
+.home {
+  height: 100vh;
+  background-image: url("images/background (1).jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+
