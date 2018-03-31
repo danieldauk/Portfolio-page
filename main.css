@@ -4,6 +4,7 @@ body{
   font-family: 'Roboto', sans-serif;
   box-sizing: border-box;
   border-collapse: collapse;
+  font-weight: 100;
 }
 
 a:link, a:visited, a:hover, a:active {
@@ -30,6 +31,7 @@ nav {
   display: grid;
   grid-template-rows: 25% 75%;
   min-height: 800px;
+  box-shadow: 1px 0px  2px rgba(66,66,66,0.1);
 }
 
 .logo{
@@ -122,7 +124,7 @@ main {
 }
 
 .home {
-  height: 100vh;
+  min-height: 100vh;
   background-image: url("images/background (1).jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -130,31 +132,28 @@ main {
 }
 
 .about{
-  background-color: rgb(81,198,217);
-  height: 100vh;
+  background-color: white;
+  min-height: 100vh;
   color: white;
   display: grid;
-  grid-template-rows: 20vh 80vh;
+  grid-template-rows: 70px 80vh;
 }
 
-.aboutText{
-  display:grid;
-  grid-template-rows: 15vh 5vh;
+.aboutHeader{
+  background-color: rgba(81,198,217, 1);
+  height: 70px;
+  display: flex;
   justify-content: center;
-  text-align: center;
   align-items: center;
-
+  border-radius:10px;
 }
 
-.about h1{
-  margin: 0px;
-  font-weight: 900;
+.aboutHeader h3{
+  color:white;
+  font-size: 30px;
+  font-weight: 100;
 }
 
-.aboutText p{
-  font-weight: 900;
-  font-size: 17px;
-}
 
 .aboutIcons{
   display: grid;
@@ -166,16 +165,16 @@ main {
 }
 
 .aboutContainer{
-
+  color:rgba(81,198,217, 1);
 }
 
 .aboutContainer h3{
-  font-weight: 900;
+  font-weight: 500;
 }
 
 .aboutBackground{
   text-align: center;
-  background: white;
+  background: rgba(81,198,217, 1);
   display: flex;
   border-radius: 50%;
   width: 150px;
@@ -186,25 +185,43 @@ main {
 }
 
 .aboutIcon {
-  color: rgb(81,198,217);
+  color: white;
   border-radius: 50%;
   font-size: 70px;
 }
 
 .projects{
-  background: tomato;
+    min-height: 100vh;
+    display:grid;
+    grid-template-rows: 70px auto;
+}
+
+.projectsHeader{
+  background-color: rgba(255,99,71, 1);
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius:10px;
+}
+
+.projectsHeader h3{
+  color:white;
+  font-size: 30px;
+  font-weight: 100;
+}
+
+.projectsContent{
+/*   rgba(255,99,71, 1) */
   display: grid;
   grid-template-columns: 300px 300px 300px;
   grid-template-rows: auto auto;
   grid-gap: 5px;
   justify-content: center;
   align-content: center;
-  height: 100vh;
-
 }
 
 .project {
-  background:rgba(0,0,0,0.1);
   height: 180px;
   width: 300px;
   position:relative;
@@ -240,30 +257,162 @@ main {
   text-align: center;
 }
 
-.certificates{
+.certificatesHeader{
   background-color: rgb(72,61,139);
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius:10px;
+}
+
+.certificatesHeader h3{
+  color:white;
+  font-size: 30px;
+  font-weight: 100;
+}
+.certificatesContent{
+  /*  rgb(72,61,139) */
   padding-top: 5px;
   display: flex;
   flex-wrap: wrap;
   align-content: space-around;
   justify-content: center;
+  margin: 20px 0;
 }
 .certificatesColumn{
- flex: 40%;
- max-width: 40%;
-}
-.certificatesColumn:first-child{
-  padding-right: 2.5px;
-}
-
-.certificatesColumn:last-child{
-  padding-left: 2.5px;
+ flex: 20%;
+ max-width: 20%;
+ padding-left: 5px;
+ padding-right: 5px;
 }
 
 .certificatesColumn img{
   width: 100%;
+  border: 1px solid rgb(72,61,139);
 }
+
 .skills{
-  height: 100vh;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: 70px auto;
+}
+
+.skillsHeader{
   background-color: rgb(0,128,128);
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius:10px;
+}
+
+.skillsHeader h3{
+  color:white;
+  font-size: 30px;
+  font-weight: 100;
+}
+
+.skillsContent{
+  background-color: white;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skillCard{
+  background: white;
+  border: 1px solid rgb(0,128,128);
+  border-radius: 10px;
+  width: 80%;
+  height: 80%;
+  min-height: 400px;
+  display:grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: auto auto auto auto;
+  justify-content: space-around;
+  align-content: space-around;
+}
+
+.skillCard img{
+  width: 100px;
+  height: 100px;
+}
+
+.contacts{
+  min-height: 40vh;
+  background: white;
+}
+
+.contactsHeader{
+  background-color: rgb(252,155,25);
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius:10px;
+}
+
+.contactsHeader h3{
+  color:white;
+  font-size: 30px;
+  font-weight: 100;
+}
+
+.cta{
+  text-align: center;
+  color: rgb(252,155,25);
+  font-size:23px;
+}
+
+.cta h4:first-child{
+  font-weight: 500;
+  text-decoration: underline;
+
+}
+
+.cta h4:last-child{
+  font-weight: 100;
+}
+
+.socialIcons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.socialIcons a{
+  background: rgb(252,155,25);
+  border-radius: 5px;
+  margin: 0 5px 15px 5px;
+  width: 50px;
+  height: 50px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.socialIcon {
+  color: white;
+  font-size: 30px;
+  position:absolute;
+}
+
+@keyframes social{
+  0% {top:0px}
+  50% {top:40px}
+  51% {top:-40px}
+  100% {top:0px}
+}
+
+.socialIcons a:hover .socialIcon {
+  animation-name: social;
+  animation-duration: 0.2s;
+  animation-timing-function: linear;
+}
+
+.socialIcons a:hover {
+  background: rgba(252,155,25)
 }
