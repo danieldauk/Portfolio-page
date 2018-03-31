@@ -85,7 +85,7 @@ nav {
 }
 
 .menu a:hover{
-  background: rgba(66,66,66, 0.1);
+  background: rgba(68,68,68, 0.1);
   border-width: 3px;
   padding-left: 23px;
 }
@@ -125,7 +125,7 @@ main {
 
 .home {
   min-height: 100vh;
-  background-image: url("images/background (1).jpg");
+  background-image: url("images/background (3).jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -165,7 +165,15 @@ main {
 }
 
 .aboutContainer{
-  color:rgba(81,198,217, 1);
+  color:rgba(68,68,68, 1);
+}
+
+.aboutBackground:hover{
+  background: white;
+}
+
+.aboutBackground:hover .aboutIcon{
+  color: rgba(81,198,217, 1);
 }
 
 .aboutContainer h3{
@@ -182,12 +190,14 @@ main {
   justify-content: center;
   align-items: center;
   margin: auto;
+  transition: 0.3s;
 }
 
 .aboutIcon {
   color: white;
   border-radius: 50%;
   font-size: 70px;
+    transition: 0.3s;
 }
 
 .projects{
