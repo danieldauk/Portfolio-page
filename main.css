@@ -1,3 +1,4 @@
+
 body{
   padding: 0;
   margin: 0;
@@ -17,7 +18,7 @@ a:link, a:visited, a:hover, a:active {
   overflow-x: hidden;
 }
 
-/* ---SIDEBAR SECTION ---*/
+/*-------sidebar section-------*/
 
 .sidebar{
 
@@ -117,7 +118,7 @@ nav {
   color:rgb(68,68,68);
 }
 
-/* ---MAIN SECTION ---*/
+/*-------main section-------*/
 
 main {
   width: 100%;
@@ -130,6 +131,7 @@ main {
   background-size: cover;
   background-position: center center;
 }
+/*-------about section-------*/
 
 .about{
   background-color: white;
@@ -200,6 +202,8 @@ main {
     transition: 0.3s;
 }
 
+/*-------projects section-------*/
+
 .projects{
     min-height: 100vh;
     display:grid;
@@ -267,6 +271,8 @@ main {
   text-align: center;
 }
 
+/*-------certificates section-------*/
+
 .certificates{
   min-height: 100vh;
   display: grid;
@@ -307,6 +313,11 @@ main {
   width: 100%;
   border: 1px solid rgb(72,61,139);
 }
+
+
+
+/*-------skills section-------*/
+
 
 .skills{
     min-height: 100vh;
@@ -354,6 +365,10 @@ main {
   width: 100px;
   height: 100px;
 }
+
+
+/*-------contacts section-------*/
+
 
 .contacts{
   min-height: 300px;
@@ -431,4 +446,250 @@ main {
 
 .socialIcons a:hover {
   background: rgba(252,155,25)
+}
+
+
+
+/* -----Media Queries----- */
+
+@media  (max-width: 768px){
+/*Sidebar*/
+  .grid-container{
+    grid-template-columns: auto;
+  }
+
+  nav{
+    width: 0px;
+    overflow: hidden;
+  }
+
+/*-------home section-------*/
+  .home {
+    background-image: url("images/backgroundMobile (1).jpg");
+}
+/*-------main section-------*/
+  main {
+    width: 100vw;
+  }
+/*-------about section-------*/
+  .about{
+    min-height: 100%;
+    grid-template-rows: 70px auto;
+  }
+
+  .aboutContainer{
+    margin: 5px 15px 20px 15px;
+  }
+
+  .aboutIcons{
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    margin-top: 30px;
+  }
+
+
+  .aboutBackground:hover{
+    background: rgba(81,198,217, 1);
+  }
+
+  .aboutBackground:hover .aboutIcon{
+    color: white;
+  }
+
+  .aboutBackground{
+    width: 130px;
+    height: 130px;
+  }
+
+  .aboutIcon {
+    font-size: 50px;
+  }
+
+/*-------projects section-------*/
+
+.projects{
+    min-height: 100%;
+    grid-template-rows: auto;
+}
+
+
+.projectsContent{
+/*   rgba(255,99,71, 1) */
+  display: grid;
+  grid-template-columns: auto;
+  margin-top: 30px;
+}
+
+.project {
+  height: 144px;
+  width: 240px;
+  position:relative;
+  margin: 5px auto;
+}
+
+.project:last-child{
+  margin-bottom: 30px;
+}
+
+.project:hover .overlay{
+  height: 100%;
+}
+.project:hover .overlayText{
+ height: auto;
+}
+
+.project img {
+  width: 240px;
+  height: 144px;
+}
+
+/*-------certificates section-------*/
+.certificates{
+  min-height: 100%;
+  grid-template-rows:auto;
+}
+
+.certificatesContent{
+  margin-top: 30px;
+}
+
+
+.certificatesColumn{
+ flex: 40%;
+ max-width: 40%;
+ padding-left: 5px;
+ padding-right: 5px;
+}
+
+/*-------skills section-------*/
+
+.skills{
+    min-height: 100%;
+    grid-template-rows: 70px auto;
+}
+
+
+.skillCard{
+  margin: 30px 0;
+  width: 80%;
+  height: 80%;
+  min-height: 100%;
+  grid-template-rows: auto;
+  grid-template-columns: auto auto auto;
+}
+
+.skillCard img{
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+}
+/*-------contacts section-------*/
+
+  .contacts{
+    min-height: 300px;
+    background: white;
+  }
+
+  .socialIcons a{
+    margin: 0 5px 15px 5px;
+    width: 50px;
+    height: 50px;
+    position: static;
+  }
+
+  .socialIcon {
+    position: static;
+  }
+
+  .socialIcons a:hover .socialIcon {
+    animation-name: none;
+  }
+
+/*-------Sticky header-------*/
+
+  .stickyHeader{
+    height: 50px;
+    width: 100vw;
+    position: fixed;
+    background: rgba(255,255,255,0.9);
+    display: grid;
+    grid-template-columns: 50px auto;
+    z-index: 1;
+    box-shadow: 0px 0px 3px rgba(0,0,0,0.5);
+  }
+
+  .stickyLogo{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .burgerNav {
+    height:50px;
+    width: 50px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+
+  }
+
+  .burgerNav input {
+    opacity: 0;
+    width:100%;
+    height:100%;
+    margin: 0px;
+    position: absolute;
+    z-index: 1;
+    cursor: pointer;
+  }
+
+  .burgerNav span {
+    width:40px;
+    height:3px;
+    display:block;
+    background:rgba(68,68,68,0.8);
+    position: absolute;
+    top:25px;
+    transition: 0.3s;
+  }
+  .burgerNav span::after {
+    content: "";
+    width:40px;
+    height:3px;
+    display:block;
+    background:rgba(68,68,68,0.8);
+    position: absolute;
+    top:-12px;
+    transition: 0.5s;
+  }
+  .burgerNav span::before {
+    content: "";
+    width:40px;
+    height:3px;
+    display:block;
+    background:rgba(68,68,68,0.8);
+    position: absolute;
+    top:12px;
+    transition: 0.5s;
+  }
+
+  .burgerNav input:checked +span{
+    background: transparent;
+  }
+  .burgerNav input:checked +span::after{
+    transform: rotate(45deg) translate(8px, 9px);
+  }
+  .burgerNav input:checked +span::before{
+    transform: rotate(-45deg) translate(8px, -9px);
+  }
+
+
+
+
 }
