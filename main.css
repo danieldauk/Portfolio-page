@@ -232,14 +232,11 @@ main {
   justify-content: center;
   align-items: center;
   margin: auto;
-  transition: 0.3s;
 }
 
 .aboutIcon {
   color: white;
-  border-radius: 50%;
   font-size: 70px;
-    transition: 0.3s;
 }
 
 /*-------projects section-------*/
@@ -568,15 +565,6 @@ main {
     text-align: center;
     align-content: center;
     margin-top: 30px;
-  }
-
-
-  .aboutBackground:hover{
-    background: rgba(81,198,217, 1);
-  }
-
-  .aboutBackground:hover .aboutIcon{
-    color: white;
   }
 
   .aboutBackground{
