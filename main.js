@@ -21,7 +21,6 @@ $(document).ready(function(){
     if(scrollDistance< $("#about").offset().top -  $(window).height()/3){
       $('.menu a.activeMenu').removeClass('activeMenu');
     } else if($("#about").offset().top < scrollDistance+ $(window).height()/3 && scrollDistance <$("#projects").offset().top -  $(window).height()/3){
-      $(".home").css({background:"red"});
       $('.menu a.activeMenu').removeClass('activeMenu');
       $("a[href='#about'").addClass('activeMenu');
     } else if($("#projects").offset().top < scrollDistance+ $(window).height()/3 && scrollDistance <$("#certificates").offset().top - $(window).height()/3){
