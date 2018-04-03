@@ -22,19 +22,19 @@ $(document).ready(function(){
       $('.menu a.activeMenu').removeClass('activeMenu');
     } else if($("#about").offset().top < scrollDistance+ $(window).height()/3 && scrollDistance <$("#projects").offset().top -  $(window).height()/3){
       $('.menu a.activeMenu').removeClass('activeMenu');
-      $("a[href='#about'").addClass('activeMenu');
+      $("a[href='#about']").addClass('activeMenu');
     } else if($("#projects").offset().top < scrollDistance+ $(window).height()/3 && scrollDistance <$("#certificates").offset().top - $(window).height()/3){
       $('.menu a.activeMenu').removeClass('activeMenu');
-      $("a[href='#projects'").addClass('activeMenu');
+      $("a[href='#projects']").addClass('activeMenu');
     } else if($("#certificates").offset().top < scrollDistance+ $(window).height()/3 && scrollDistance <$("#skills").offset().top - $(window).height()/3){
       $('.menu a.activeMenu').removeClass('activeMenu');
-      $("a[href='#certificates'").addClass('activeMenu');
+      $("a[href='#certificates']").addClass('activeMenu');
     } else if($("#skills").offset().top < scrollDistance+ $(window).height()/3 && scrollBottom < documentHeight-10){
       $('.menu a.activeMenu').removeClass('activeMenu');
-      $("a[href='#skills'").addClass('activeMenu');
+      $("a[href='#skills']").addClass('activeMenu');
     }else if(scrollBottom >= documentHeight-10){
       $('.menu a.activeMenu').removeClass('activeMenu');
-      $("a[href='#contacts'").addClass('activeMenu');
+      $("a[href='#contacts']").addClass('activeMenu');
 
   }
 });
