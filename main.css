@@ -654,13 +654,16 @@ main {
 
 
 .skillCard{
-  margin-top: 30px;
-  margin-bottom: 30px;
   width: 80%;
   height: 80%;
   min-height: 100%;
   grid-template-rows: auto;
   grid-template-columns: auto auto auto;
+}
+
+.skillsContent{
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .skillCard img{
