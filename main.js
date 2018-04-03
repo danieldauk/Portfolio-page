@@ -13,11 +13,11 @@ $(document).ready(function(){
   });
 //active class based on current scroll position
   $(window).scroll(function(){
-
-
     var scrollDistance = $(window).scrollTop();
     var scrollBottom = scrollDistance + $(window).height();
     var documentHeight = $(document).height();
+
+    $(".aboutHeader h3").text( $(window).height() + " " + scrollDistance + " " +(scrollDistance< $("#about").offset().top - window.innerHeight/3));
 
 // assign class 'activeMenu' depending on scroll position
     if(scrollDistance< $("#about").offset().top - window.innerHeight/3){
@@ -25,7 +25,6 @@ $(document).ready(function(){
     } else if($("#about").offset().top < scrollDistance+ window.innerHeight/3 && scrollDistance <$("#projects").offset().top - window.innerHeight/3){
       $('.menu a.activeMenu').removeClass('activeMenu');
       $("a[href='#about'").addClass('activeMenu');
-      console.log("active");
     } else if($("#projects").offset().top < scrollDistance+ $(window).height()/3 && scrollDistance <$("#certificates").offset().top - $(window).height()/3){
       $('.menu a.activeMenu').removeClass('activeMenu');
       $("a[href='#projects'").addClass('activeMenu');
