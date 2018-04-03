@@ -586,7 +586,6 @@ main {
 
 .projects{
     min-height: 100%;
-    grid-template-rows: auto;
     width: 100vw;
 }
 
@@ -595,6 +594,7 @@ main {
 /*   rgba(255,99,71, 1) */
   display: grid;
   grid-template-columns: auto;
+  grid-template-rows: auto;
   margin-top: 30px;
 }
 
