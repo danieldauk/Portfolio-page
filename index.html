@@ -11,6 +11,7 @@
 
   <link href="https://fonts.googleapis.com/css?family=Roboto:100,500" rel="stylesheet">
   <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="animations.css" >
   <link rel="stylesheet" type="text/css" href="main.css" >
 
 </head>
@@ -21,7 +22,7 @@
     <nav>
       <div class="logo">
         <img src="images/Daniel.jpg">
-        <span>Daniel Dauksevic</span>
+          <span>Daniel Dauksevic</span>
       </div>
       <div class="menu">
         <a href="#about">
@@ -44,7 +45,7 @@
           <i class="fas fa-envelope menuIcon"></i>
           <span>Contacts</span>
         </a>
-        <a href="">
+        <a >
           <i class="fas fa-file-alt menuIcon"></i>
           <span>Resume</span>
         </a>
@@ -68,7 +69,11 @@
   <main>
 
     <div class="home">
+        <div class="typingEffect">
+          <span class="typingContainer">
 
+          </span>
+        </div>
     </div>
 
     <div class="about" id="about">
@@ -76,29 +81,29 @@
         <h3>About</h3>
       </div>
 
-      <div class="aboutIcons">
-        <div class="aboutContainer">
+      <div class="aboutIcons animatedParent animateOnce" data-sequence="500">
+        <div class="aboutContainer animated bounceInLeft" data-id="1">
           <div class="aboutBackground">
             <i class="fas fa-anchor aboutIcon"></i>
           </div>
           <h3>Lorem</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
         </div>
-        <div class="aboutContainer">
+        <div class="aboutContainer animated bounceInLeft" data-id="2">
           <div class="aboutBackground">
             <i class="fas fa-cubes aboutIcon"></i>
           </div>
           <h3>Lorem</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
         </div>
-        <div class="aboutContainer">
+        <div class="aboutContainer animated bounceInLeft" data-id="3">
           <div class="aboutBackground">
             <i class="fas fa-hand-holding-heart aboutIcon"></i>
           </div>
           <h3>Lorem</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
         </div>
-        <div class="aboutContainer">
+        <div class="aboutContainer animated bounceInLeft" data-id="4">
           <div class="aboutBackground">
           <i class="fas fa-lightbulb aboutIcon"></i>
           </div>
@@ -216,18 +221,18 @@
         <h3>Skills</h3>
       </div>
       <div class="skillsContent">
-        <div class="skillCard">
-          <img src="/images/html5.png" />
-          <img src="/images/css3.png" />
-          <img src="/images/bootstrap.png" />
-          <img src="/images/sass.png" />
-          <img src="/images/javascript.png" />
-          <img src="/images/jquery.png" />
-          <img src="/images/angular.png" />
-          <img src="/images/nodejs.png" />
-          <img src="/images/mongodb.png" />
-          <img src="/images/webpack.png" />
-          <img src="/images/github.png" />
+        <div class="skillCard animatedParent animateOnce" data-sequence="100" >
+          <img class="animated bounceInDown" data-id="1" src="/images/html5.png" />
+          <img class="animated bounceInDown" data-id="2" src="/images/css3.png" />
+          <img class="animated bounceInDown" data-id="3" src="/images/bootstrap.png" />
+          <img class="animated bounceInDown" data-id="4"src="/images/sass.png" />
+          <img class="animated bounceInDown" data-id="5"src="/images/javascript.png" />
+          <img class="animated bounceInDown" data-id="6"src="/images/jquery.png" />
+          <img class="animated bounceInDown" data-id="7" src="/images/angular.png" />
+          <img class="animated bounceInDown" data-id="8" src="/images/nodejs.png" />
+          <img class="animated bounceInDown" data-id="9" src="/images/mongodb.png" />
+          <img class="animated bounceInDown" data-id="10" src="/images/webpack.png" />
+          <img class="animated bounceInDown" data-id="11" src="/images/github.png" />
         </div>
       </div>
     </div>
@@ -259,8 +264,9 @@
 
   </main>
 </div>
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="typed.min.js"></script>
+<script src="css3-animate-it.js"></script>
 <script src="main.js"></script>
 </body>
 </html>
