@@ -592,7 +592,6 @@ main {
 
 .projects{
     min-height: 100%;
-    width: 100vw;
 }
 
 
@@ -602,6 +601,7 @@ main {
   grid-template-columns: auto;
   grid-template-rows: auto;
   margin-top: 30px;
+  width: 100vw;
 }
 
 .project {
