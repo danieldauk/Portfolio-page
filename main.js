@@ -9,7 +9,7 @@ $(document).ready(function(){
     e.preventDefault();
     var target = $(this).attr("href");
     var headerOffset = ($(".stickyHeader").css("display") === "none")? 0:-50;
-    $("html").animate({scrollTop: $(target).offset().top+headerOffset},500);
+    $("body, html").animate({scrollTop: $(target).offset().top+headerOffset},500);
   });
 //active class based on current scroll position
   $(window).scroll(function(){
