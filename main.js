@@ -18,10 +18,9 @@ $(document).ready(function(){
     var documentHeight = $(document).height();
 
 // assign class 'activeMenu' depending on scroll position
-    if(scrollDistance< $("#about").offset().top - window.innerHeight/3){
+    if(scrollDistance< $("#about").offset().top -  $(window).height()/3){
       $('.menu a.activeMenu').removeClass('activeMenu');
-
-    } else if($("#about").offset().top < scrollDistance+ window.innerHeight/3 && scrollDistance <$("#projects").offset().top - window.innerHeight/3){
+    } else if($("#about").offset().top < scrollDistance+ $(window).height()/3 && scrollDistance <$("#projects").offset().top -  $(window).height()/3){
       $(".home").css({background:"red"});
       $('.menu a.activeMenu').removeClass('activeMenu');
       $("a[href='#about'").addClass('activeMenu');
