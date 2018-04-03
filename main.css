@@ -587,6 +587,7 @@ main {
 .projects{
     min-height: 100%;
     grid-template-rows: auto;
+    width: 100%;
 }
 
 
