@@ -51,6 +51,10 @@ nav {
   justify-content: center;
 }
 
+.logo a{
+  cursor: pointer;
+}
+
 .logo img{
   height: 150px;
   margin: auto;
@@ -226,13 +230,14 @@ main {
   text-align: center;
   background: rgba(81,198,217, 1);
   display: flex;
-  border-radius: 50%;
   width: 150px;
   height: 150px;
   justify-content: center;
   align-items: center;
   margin: auto;
+  clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
 }
+
 
 .aboutIcon {
   color: white;
@@ -409,7 +414,6 @@ main {
 
 .contacts{
   min-height: 300px;
-  background: white;
 }
 
 .contactsHeader{
@@ -418,7 +422,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius:10px;
+  border-radius: 10px;
 }
 
 .contactsHeader h3{
@@ -698,6 +702,10 @@ main {
     display:flex;
     justify-content: center;
     align-items: center;
+  }
+
+  .stickyLogo span {
+    cursor: pointer;
   }
 
 

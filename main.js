@@ -11,6 +11,13 @@ $(document).ready(function(){
     var headerOffset = ($(".stickyHeader").css("display") === "none")? 0:-50;
     $("body, html").animate({scrollTop: $(target).offset().top+headerOffset},500);
   });
+
+  $(".logo a, .stickyLogo span").click(function(e){
+    e.preventDefault();
+    $("body, html").animate({scrollTop: 0},500);
+  });
+
+
 //active class based on current scroll position
   $(window).scroll(function(){
     var scrollDistance = $(window).scrollTop();
@@ -40,7 +47,6 @@ $(document).ready(function(){
 });
 
 //typing effect
-
 var typed1 = new Typed('.typingContainer', {
   strings: [
     "",
