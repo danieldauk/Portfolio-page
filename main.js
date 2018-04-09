@@ -12,8 +12,7 @@ $(document).ready(function(){
     $("body, html").animate({scrollTop: $(target).offset().top+headerOffset},500);
 
     //close menu and uncheck burger icon on link click
-    $("nav").removeClass("open");
-    $(".burgerNav input").prop("checked", false);
+    closeMenu();
   });
 
   $(".logo a, .stickyLogo span").click(function(e){
@@ -21,11 +20,15 @@ $(document).ready(function(){
     $("body, html").animate({scrollTop: 0},500);
   });
 
+  //close menu and uncheck burger icon
+  function closeMenu(){
+    $("nav").removeClass("open");
+    $(".burgerNav input").prop("checked", false);
+  }
 
   //close menu on click outside of menu and burger icon
   $(".grid-container").click(function(){
-    $("nav").removeClass("open");
-    $(".burgerNav input").prop("checked", false);
+    closeMenu();
   });
 
   $(".menu").click(function(event){
@@ -42,7 +45,8 @@ $(document).ready(function(){
     var scrollDistance = $(window).scrollTop();
     var scrollBottom = scrollDistance + $(window).height();
     var documentHeight = $(document).height();
-
+//close menu and uncheck burger icon
+closeMenu();
 // assign class 'activeMenu' depending on scroll position
     if(scrollDistance< $("#about").offset().top -  $(window).height()/3){
       $('.menu a.activeMenu').removeClass('activeMenu');
