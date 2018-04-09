@@ -23,7 +23,7 @@ $(document).ready(function(){
 
 
   //close menu on click outside of menu and burger icon
-  $("body").click(function(){
+  $(".grid-container").click(function(){
     $("nav").removeClass("open");
     $(".burgerNav input").prop("checked", false);
   });
