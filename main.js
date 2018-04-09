@@ -10,11 +10,30 @@ $(document).ready(function(){
     var target = $(this).attr("href");
     var headerOffset = ($(".stickyHeader").css("display") === "none")? 0:-50;
     $("body, html").animate({scrollTop: $(target).offset().top+headerOffset},500);
+
+    //close menu and uncheck burger icon on link click
+    $("nav").removeClass("open");
+    $(".burgerNav input").prop("checked", false);
   });
 
   $(".logo a, .stickyLogo span").click(function(e){
     e.preventDefault();
     $("body, html").animate({scrollTop: 0},500);
+  });
+
+
+  //close menu on click outside of menu and burger icon
+  $("html").click(function(){
+    $("nav").removeClass("open");
+    $(".burgerNav input").prop("checked", false);
+  });
+
+  $(".menu").click(function(event){
+    event.stopPropagation();
+  });
+
+  $(".burgerNav").click(function(event){
+    event.stopPropagation();
   });
 
 
