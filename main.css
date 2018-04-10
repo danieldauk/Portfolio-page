@@ -279,7 +279,7 @@ main {
 }
 
 .project {
-  height: 180px;
+  height: 200px;
   width: 300px;
   position:relative;
 }
@@ -293,7 +293,7 @@ main {
 
 .project img {
   width: 300px;
-  height: 180px;
+  height: 200px;
 }
 
 .overlay{
@@ -316,20 +316,14 @@ main {
 }
 
 .overlayText h3{
-  transform: translateY(-50px);
+  transform: translateY(-70px);
   opacity:0;
   transition: .5s;
   font-weight: 300;
 }
 
 .overlayText p{
-  transform: translateY(50px);
-  opacity:0;
-  transition: .5s;
-}
-
-.overlayText button{
-  transform: translateY(50px);
+  transform: translateY(70px);
   opacity:0;
   transition: .5s;
 }
@@ -343,9 +337,50 @@ main {
   transform: translateY(0);
   opacity: 1;
 }
-.project:hover .overlayText button{
+.project:hover .project-btn{
   transform: translateY(0);
   opacity: 1;
+}
+
+.project-btn{
+  font-size: 18px;
+  border: 1px solid rgba(255,99,71, 1);
+  border-radius: 5px;
+  width: 80px;
+  height: 40px;
+  position: relative;
+  background: white;
+  cursor: pointer;
+  font-weight: 100;
+  font-family: roboto, sans-serif;
+  text-decoration: none;
+  transform: translateY(70px);
+  opacity:0;
+  transition: transform 0.5s, opacity 0.5s, background .2s;
+}
+
+.project-btn::after{
+  content: "";
+  width: 78px;
+  height: 38px;
+  position: absolute;
+  top:0;
+  left: 0;
+  border-radius: 5px;
+  display: inline-block;
+  transition: .2s;
+  z-index: -1;
+}
+
+.project-btn:hover{
+  background-color: rgba(255,99,71, 1);
+  color:white;
+}
+
+.project-btn:hover.project-btn::after{
+  transform: scale(1.5);
+  opacity: 0;
+  background-color: rgba(255,99,71, 1);
 }
 
 /*-------certificates section-------*/
@@ -631,7 +666,7 @@ main {
 }
 
 .project {
-  height: 144px;
+  height: 160px;
   width: 240px;
   position:relative;
   margin: 5px auto;
@@ -650,7 +685,7 @@ main {
 
 .project img {
   width: 240px;
-  height: 144px;
+  height: 160px;
 }
 
 /*-------certificates section-------*/
