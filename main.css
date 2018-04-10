@@ -1,3 +1,6 @@
+*{
+  outline: 0;
+}
 
 body{
   padding: 0;
@@ -542,15 +545,15 @@ main {
 }
 
 @keyframes social{
-  0% {top:0px}
-  50% {top:40px}
-  51% {top:-40px}
-  100% {top:0px}
+  0% {top:10px}
+  50% {top:50px}
+  51% {top:-50px}
+  100% {top:10px}
 }
 
 .socialIcons a:hover .socialIcon {
   animation-name: social;
-  animation-duration: 0.2s;
+  animation-duration: .2s;
   animation-timing-function: linear;
 }
 
