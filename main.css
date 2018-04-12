@@ -906,7 +906,15 @@ main {
     transform: rotate(-45deg) translate(8px, -9px);
   }
 
+/* popup */
+.certificate-modal-box{
+  width: 90%;
 
+}
+
+.certificate-modal-box img{
+  width: 80%;
+}
 
 
 }
