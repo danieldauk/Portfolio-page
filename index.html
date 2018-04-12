@@ -11,7 +11,7 @@
 
   <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,500" rel="stylesheet">
   <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
-  <link rel="stylesheet" type="text/css" href="animations.css" >
+  <link rel="stylesheet" type="text/css" href="vendors/animations.css" >
   <link rel="stylesheet" type="text/css" href="main.css" >
 
 </head>
@@ -201,24 +201,24 @@
       </div>
       <div class="certificatesContent">
         <div class="certificatesColumn">
-            <img src="images/certificate2.jpg" />
-            <img src="images/certificate1.jpg" />
-            <img src="images/certificate2.jpg" />
+            <a href="#certificate-modal"><img src="images/certificate1.jpg" /></a>
+            <a href="#certificate-modal"><img src="images/certificate2.jpg" /></a>
+            <a href="#certificate-modal"><img src="images/certificate1.jpg" /></a>
         </div>
         <div class="certificatesColumn">
-            <img src="images/certificate1.jpg" />
-            <img src="images/certificate2.jpg" />
-            <img src="images/certificate1.jpg" />
+            <a href="#certificate-modal"><img src="images/certificate2.jpg" /></a>
+            <a href="#certificate-modal"><img src="images/certificate1.jpg" /></a>
+            <a href="#certificate-modal"><img src="images/certificate2.jpg" /></a>
         </div>
         <div class="certificatesColumn">
-            <img src="images/certificate2.jpg" />
-            <img src="images/certificate1.jpg" />
-            <img src="images/certificate2.jpg" />
+            <a href="#certificate-modal"><img src="images/certificate1.jpg" /></a>
+            <a href="#certificate-modal"><img src="images/certificate2.jpg" /></a>
+            <a href="#certificate-modal"><img src="images/certificate1.jpg" /></a>
         </div>
         <div class="certificatesColumn">
-            <img src="images/certificate1.jpg" />
-            <img src="images/certificate2.jpg" />
-            <img src="images/certificate1.jpg" />
+            <a href="#certificate-modal"><img src="images/certificate2.jpg" /></a>
+            <a href="#certificate-modal"><img src="images/certificate1.jpg" /></a>
+            <a href="#certificate-modal"><img src="images/certificate2.jpg" /></a>
         </div>
       </div>
     </div>
@@ -272,9 +272,15 @@
 
   </main>
 </div>
+<div class="certificate-modal" id="certificate-modal">
+  <a href="#certificates" class="close-modal"><i class="fas fa-times"></i></a>
+  <div class="certificate-modal-box">
+    <img src="">
+  </div>
+</div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="typed.min.js"></script>
-<script src="css3-animate-it.js"></script>
+<script src="vendors/typed.min.js"></script>
+<script src="vendors/css3-animate-it.js"></script>
 <script src="main.js"></script>
 </body>
 </html>

@@ -558,7 +558,71 @@ main {
 }
 
 .socialIcons a:hover {
-  background: rgba(252,155,25)
+  background: rgba(252,155,25);
+}
+
+/* -----Popup----- */
+
+.certificate-modal{
+  opacity:0;
+  visibility: hidden;
+  position:fixed;
+  top:0;
+  left:0;
+  background: rgba(0,0,0,0.5);
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  transition: .2s;
+}
+
+.certificate-modal:target {
+  opacity:1;
+  visibility: visible;
+}
+
+.certificate-modal:target .certificate-modal-box {
+  opacity:1;
+  transform: scale(1);
+}
+
+.certificate-modal:target .close-modal {
+  transform: rotateZ(0);
+}
+
+.certificate-modal-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  opacity:0;
+  transition: .3s;
+  transform: scale(0.3);
+}
+
+.certificate-modal-box img{
+  width: 70%;
+}
+
+.close-modal{
+  position: absolute; 
+  right: 0;
+  top:0;
+  font-size:70px;
+  height:70px;
+  width:70px;
+  border:none;
+  color:rgba(255,255,255, 0.7);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotateZ(180deg);
+  transition: .3s;
+  background-color: transparent !important;
 }
 
 
