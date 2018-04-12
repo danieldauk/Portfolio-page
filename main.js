@@ -5,7 +5,7 @@ $(document).ready(function(){
   });
 
 // smooth scrolling
-  $("a[href^='#']").click(function(e){
+  $(".sidebar a[href^='#']").click(function(e){
     e.preventDefault();
     var target = $(this).attr("href");
     var headerOffset = ($(".stickyHeader").css("display") === "none")? 0:-50;
@@ -84,6 +84,14 @@ var typed1 = new Typed('.typingContainer', {
   backDelay: 1500,
   contentType: "text"
 });
+
+
+//popup image src
+$(".certificatesColumn a").click(function(){
+  var saved = $(this).children().attr("src");
+  $(".certificate-modal-box img").prop("src", saved);
+});
+
 
 //about icons animation
 // http://jackonthe.net/css3animateit/examples/
