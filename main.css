@@ -625,6 +625,14 @@ main {
   background-color: transparent !important;
 }
 
+.close-modal span{
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 22px;
+}
+
 
 
 /* -----Media Queries----- */

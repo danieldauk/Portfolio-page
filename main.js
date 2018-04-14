@@ -92,6 +92,11 @@ $(".certificatesColumn a").click(function(){
   $(".certificate-modal-box img").prop("src", saved);
 });
 
+//close modal on background click
+$(".certificate-modal").click(function(){
+  window.location.href = window.location.href.replace("#certificate-modal", "#certificates");
+});
+
 
 //about icons animation
 // http://jackonthe.net/css3animateit/examples/
