@@ -225,6 +225,11 @@ main {
   color:rgba(68,68,68, 1);
 }
 
+.aboutContainer p{
+    text-align: justify;
+    padding: 0 20px;
+}
+
 .aboutContainer h3{
   font-weight: 500;
 }
@@ -704,7 +709,10 @@ main {
 
   .aboutContainer{
     margin: 5px 15px 20px 15px;
+    
   }
+
+
 
   .aboutIcons{
     display: grid;
