@@ -279,7 +279,7 @@ main {
 .projectsContent{
 /*   rgba(255,99,71, 1) */
   display: grid;
-  grid-template-columns: 300px 300px 300px;
+  grid-template-columns: auto auto auto;
   grid-template-rows: auto auto;
   grid-gap: 5px;
   justify-content: center;
@@ -290,6 +290,10 @@ main {
   height: 160px;
   width: 300px;
   position:relative;
+}
+
+.project:nth-child(-n+3){
+  margin-bottom: 40px;
 }
 
 .project:hover .overlay{
@@ -641,6 +645,38 @@ main {
 
 
 /* -----Media Queries----- */
+@media  (max-width: 1100px){
+
+  /* -----About----- */
+  .about{
+    min-height: 100%;
+    grid-template-rows: 70px auto;
+  }
+
+  .aboutIcons{
+    grid-template-columns: auto auto;
+    margin-top: 30px;
+    margin-bottom:30px;
+  }
+
+  .aboutContainer p{
+    text-align: justify;
+    padding: 0 60px;
+}
+  /* -----Project----- */
+  .projectsContent{
+      margin-top:30px;
+      grid-template-columns: auto auto;
+      grid-template-rows: auto;
+    }
+    
+    .project {
+      margin-bottom: 40px;
+    }
+    
+
+}
+
 
 @media  (max-width: 768px){
 /*Sidebar*/
@@ -752,7 +788,7 @@ main {
   height: 150px;
   width: 255px;
   position:relative;
-  margin: 5px auto;
+  margin: 30px auto;
 }
 
 .project:last-child{
