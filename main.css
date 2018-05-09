@@ -1033,3 +1033,28 @@ main {
 
 
 }
+
+@media (min-width: 1500px){
+  .projectsContent{
+      grid-gap: 10px;
+
+    }
+    
+    .project {
+      height: 200px;
+      width: 375px;
+      position:relative;
+    }
+    
+    .project:nth-child(-n+3){
+      margin-bottom: 40px;
+    }
+    
+ 
+
+    
+    .project img {
+      width: 375px;
+      height: 200px;
+    }
+}
