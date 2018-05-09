@@ -1,21 +1,8 @@
 $(".home").hide();
+
 $(document).ready(function() {
 
-  $(window).on("load", function() {
-    $(".spinner").hide();
-    $(".home").show();
 
-    //typing effect
-    var typed1 = new Typed(".typingContainer", {
-      strings: ["", "Hello!", "My name is Daniel", "I'm a Front-End Developer"],
-      typeSpeed: 100,
-      startDelay: 100,
-      loop: true,
-      backSpeed: 50,
-      backDelay: 1500,
-      contentType: "text"
-    });
-  });
 
   $(".burgerNav").click(function() {
     $("nav").toggleClass("open");
@@ -119,4 +106,20 @@ $(document).ready(function() {
   //about icons animation
   // http://jackonthe.net/css3animateit/examples/
   // https://mattboldt.com/demos/typed-js/
+});
+
+$(window).on("load", function() {
+  $(".spinner").hide();
+  $(".home").show();
+
+  //typing effect
+  var typed1 = new Typed(".typingContainer", {
+    strings: ["", "Hello!", "My name is Daniel", "I'm a Front-End Developer"],
+    typeSpeed: 100,
+    startDelay: 100,
+    loop: true,
+    backSpeed: 50,
+    backDelay: 1500,
+    contentType: "text"
+  });
 });
