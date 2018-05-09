@@ -1,5 +1,5 @@
+$(".home").hide();
 $(document).ready(function() {
-  $(".home").hide();
 
   $(window).on("load", function() {
     $(".spinner").hide();
